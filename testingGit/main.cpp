@@ -19,6 +19,8 @@ int main(int argc, const char * argv[])
     
 	int x = 24;
     
+    std::cout << "this will help us work pretty good";
+    
     return 0;
 }
 
