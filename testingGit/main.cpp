@@ -17,6 +17,7 @@ int main(int argc, const char * argv[])
     
     std::cout << "Adding EVEN more changes"; 
     
+	int x = 24;
     
     return 0;
 }
