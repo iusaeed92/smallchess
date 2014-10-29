@@ -8,18 +8,20 @@
 
 #include <iostream>
 
+using namespace std;
+
 int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    std::cout << "Hello, World!\n";
-    std::cout << "More changes!\n";
+    cout << "Hello, World!\n";
+    cout << "More changes!\n";
     
-    std::cout << "Adding EVEN more changes"; 
+    cout << "Adding EVEN more changes";
     
 	int x = 24;
     
-    std::cout << "this will help us work pretty good";
+    cout << "this will help us work pretty good";
     
     return 0;
 }
