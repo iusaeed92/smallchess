@@ -25,7 +25,8 @@ public:
 	void setBlack(vector <piece> y);
 	void setBoardConfig(spaces[][] Board);
 	
-	vector <piece> getWhite;
-	vector <piece> getBlack;
-	spaces[][] getBoardConfig;
+	vector <piece> getWhite();
+	vector <piece> getBlack();
+	spaces[][] getBoardConfig();
+	void print();
 }
