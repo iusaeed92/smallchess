@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <vector>
+#include "Piece.h"
 
 using namespace std;
 
@@ -23,7 +24,7 @@ public:
 
 	void setWhite(vector <piece> x);
 	void setBlack(vector <piece> y);
-	void setBoardConfig(spaces[][] Board);
+	void setBoardConfig(spaces[][] board);
 	
 	vector <piece> getWhite();
 	vector <piece> getBlack();
