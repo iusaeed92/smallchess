@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <string>
 #include <utility> 
-
+#include <vector>
 
 using namespace std;
 
@@ -50,5 +50,102 @@ public:
 };
 
 
+#endif /* defined(__testingGit__Piece__) */
+
+////////////////////////////////////////////
+// SUBCLASSES
+
+////////////////
+//PAWN
+
+class Pawn: public piece{
+	
+public:
+	
+	
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	
+	
+	 
+};
+
+//////////////////
+//Bishop
+
+class Bishop: public piece{
+	
+public:
+	
+	
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	
+	
+	 
+};
+
+//////////////////
+//Knight
+
+class Knight: public piece{
+	
+public:
+	
+	
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	
+	
+	 
+};
+
+//////////////////
+//Castle
+
+class Castle: public piece{
+	
+public:
+	
+	
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	
+	
+	 
+};
+
+/////////////////
+//Queen
+
+class Queen: public piece{
+	
+public:
+	
+	
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	
+	
+	 
+};
+
+////////////////
+//King
+
+class King: public piece{
+	
+public:
+	
+	
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	
+	
+	 
+};
+
 
 #endif /* defined(__testingGit__Piece__) */
+
+
+
+
+
+
+
+
