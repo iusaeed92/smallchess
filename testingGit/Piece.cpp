@@ -46,6 +46,13 @@ pair<int, int> piece::getPieceCoodinates(){
 }
 
 
+
+
+
+
+
+
+
 ////////////////////////////////////////////
 //SUBCLASSES
 

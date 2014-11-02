@@ -2,12 +2,18 @@
 //	gameState.h
 //
 
+
 #ifndef __testingGit__gameState__
 #define __testingGit__gameState__
 
 #include <iostream>
 #include <vector>
+<<<<<<< Updated upstream
 #include "Piece.h"
+=======
+#include "piece.h"
+
+>>>>>>> Stashed changes
 
 using namespace std;
 

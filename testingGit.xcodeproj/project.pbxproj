@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E43C8C71A06D29E00C0AE23 /* gameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E43C8C61A06D29E00C0AE23 /* gameState.cpp */; };
 		8E5ADA4719E5C61F00546B3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E5ADA4619E5C61F00546B3E /* main.cpp */; };
 		8E5ADA4919E5C61F00546B3E /* testingGit.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E5ADA4819E5C61F00546B3E /* testingGit.1 */; };
 		8E991F161A005B5500BD9BEE /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E991F141A005B5500BD9BEE /* Piece.cpp */; };
@@ -26,11 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E43C8C61A06D29E00C0AE23 /* gameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gameState.cpp; sourceTree = "<group>"; };
 		8E5ADA4319E5C61F00546B3E /* testingGit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testingGit; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5ADA4619E5C61F00546B3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8E5ADA4819E5C61F00546B3E /* testingGit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = testingGit.1; sourceTree = "<group>"; };
 		8E991F141A005B5500BD9BEE /* Piece.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
 		8E991F151A005B5500BD9BEE /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
+		8EF661D71A00787B009A1DFD /* gameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +68,9 @@
 			children = (
 				8E5ADA4619E5C61F00546B3E /* main.cpp */,
 				8E991F141A005B5500BD9BEE /* Piece.cpp */,
+				8EF661D71A00787B009A1DFD /* gameState.h */,
 				8E991F151A005B5500BD9BEE /* Piece.h */,
+				8E43C8C61A06D29E00C0AE23 /* gameState.cpp */,
 				8E5ADA4819E5C61F00546B3E /* testingGit.1 */,
 			);
 			path = testingGit;
@@ -122,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E43C8C71A06D29E00C0AE23 /* gameState.cpp in Sources */,
 				8E991F161A005B5500BD9BEE /* Piece.cpp in Sources */,
 				8E5ADA4719E5C61F00546B3E /* main.cpp in Sources */,
 			);
