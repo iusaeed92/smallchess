@@ -107,11 +107,9 @@ public:
 //////////////////
 //Castle
 
-<<<<<<< HEAD
+
 class Rook: public piece{
-=======
-class Castle: public Piece{
->>>>>>> origin/master
+
 	
 public:
 	
