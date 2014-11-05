@@ -50,7 +50,6 @@ public:
 };
 
 
-#endif /* defined(__testingGit__Piece__) */
 
 ////////////////////////////////////////////
 // SUBCLASSES
@@ -63,7 +62,7 @@ class Pawn: public piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
 	
 	
 	 
@@ -77,7 +76,7 @@ class Bishop: public piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
 	
 	
 	 
@@ -91,7 +90,7 @@ class Knight: public piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
 	
 	
 	 
@@ -105,7 +104,7 @@ class Castle: public piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
 	
 	
 	 
@@ -119,7 +118,7 @@ class Queen: public piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
 	
 	
 	 
@@ -133,7 +132,7 @@ class King: public piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
 	
 	
 	 
