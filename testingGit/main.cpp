@@ -60,7 +60,7 @@ int main()
 	int rowWR;
 	char letterWR;
 	int columnWR;
-	Castle whiteRook;
+	Rook whiteRook;
 	
 	int rowWQ;
 	char letterWQ;
@@ -113,7 +113,7 @@ int main()
 	int rowBR;
 	char letterBR;
 	int columnBR;
-	Castle blackRook;
+	Rook blackRook;
 	
 	int rowBQ;
 	char letterBQ;
