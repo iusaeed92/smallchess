@@ -24,52 +24,52 @@ int main()
 	int rowWP1;
 	char letterWP1;
 	int columnWP1;
-	pawn whitePawn1;
+	Pawn whitePawn1;
 	
 	int rowWP2;
 	char letterWP2;
 	int columnWP2;
-	pawn whitePawn2;
+	Pawn whitePawn2;
 	
 	int rowWP3;
 	char letterWP3;
 	int columnWP3;
-	pawn whitePawn3;
+	Pawn whitePawn3;
 	
 	int rowWP4;
 	char letterWP4;
 	int columnWP4;
-	pawn whitePawn4;
+	Pawn whitePawn4;
 	
 	int rowWP5;
 	char letterWP5;
 	int columnWP5;
-	pawn whitePawn5;
+	Pawn whitePawn5;
 	
 	int rowWN;
 	char letterWN;
 	int columnWN;
-	pawn whiteKnight;
+	Knight whiteKnight;
 	
 	int rowWB;
 	char letterWB;
 	int columnWB;
-	pawn whiteBishop;
+	Bishop whiteBishop;
 
 	int rowWR;
 	char letterWR;
 	int columnWR;
-	pawn whiteRook;
+	Castle whiteRook;
 	
 	int rowWQ;
 	char letterWQ;
 	int columnWQ;
-	pawn whiteQueen;
+	Queen whiteQueen;
 	
 	int rowWK;
 	char letterWK;
 	int columnWK;
-	pawn whiteKing;
+	King whiteKing;
 	
 ////
 ////Variables for the black pieces
@@ -77,52 +77,52 @@ int main()
 	int rowBP1;
 	char letterBP1;
 	int columnBP1;
-	pawn blackPawn1;
+	Pawn blackPawn1;
 	
 	int rowBP2;
 	char letterBP2;
 	int columnBP2;
-	pawn blackPawn2;
+	Pawn blackPawn2;
 	
 	int rowBP3;
 	char letterBP3;
 	int columnBP3;
-	pawn blackPawn3;
+	Pawn blackPawn3;
 	
 	int rowBP4;
 	char letterBP4;
 	int columnBP4;
-	pawn blackPawn4;
+	Pawn blackPawn4;
 	
 	int rowBP5;
 	char letterBP5;
 	int columnBP5;
-	pawn blackPawn5;
+	Pawn blackPawn5;
 	
 	int rowBN;
 	char letterBN;
 	int columnBN;
-	pawn blackKnight;
+	Knight blackKnight;
 	
 	int rowBB;
 	char letterBB;
 	int columnBB;
-	pawn blackBishop;
+    Bishop blackBishop;
 
 	int rowBR;
 	char letterBR;
 	int columnBR;
-	pawn blackRook;
+	Castle blackRook;
 	
 	int rowBQ;
 	char letterBQ;
 	int columnBQ;
-	pawn blackQueen;
-	
+	Queen blackQueen;
+
 	int rowBK;
 	char letterBK;
 	int columnBK;
-	pawn blackKing;
+	King blackKing;
 	
 ////
 ////Input of coordinates for all pieces

@@ -13,6 +13,8 @@
 #include <string>
 #include <utility> 
 #include <vector>
+#include <gameState.h>
+
 
 using namespace std;
 
