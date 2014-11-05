@@ -31,7 +31,12 @@ private:
     
 public:
     
-    //mutators:
+    //
+	
+	bool isSameColor(gameState instance, pair<int, int> coordinates);
+	
+	
+	//mutators:
     void setPieceName(string s);
     void setPieceColor(string s);
     void setPieceWeight(int w);
@@ -101,7 +106,7 @@ public:
 //////////////////
 //Castle
 
-class Castle: public piece{
+class Rook: public piece{
 	
 public:
 	

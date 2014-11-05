@@ -46,7 +46,9 @@ pair<int, int> piece::getPieceCoodinates(){
 }
 
 
-
+bool piece::isSameColor(gameState instance, pair<int, int> coordinates){
+	
+}
 
 
 
@@ -58,10 +60,32 @@ pair<int, int> piece::getPieceCoodinates(){
 
 //Pawn
 
-vector<pair<unsigned,unsigned>>  Pawn::generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard){
+vector<pair<unsigned,unsigned>>  Pawn::generatePossibleMoves (gameState currentGameState){
 	
-	//definition required
-
+	vector<pair<unsigned, unsigned>> possiblePawnMoves;
+	pair<int, int> localCoord = pieceCordinates;
+	
+		//check if space ahead is empty if it is then place that spaces coordinate on vector
+	if(currentGameState.getBoardConfig()[localCoord.first()-1][localCoord.second()] == empty){
+		
+		possiblePawnMoves.pushback(pair<localCoord.first()-1, localCoord.second()>)
+		}
+	
+		//check the diagonal one space ahead, if it is opposing piece push on the vector
+	if(currentGameState.getBoardConfig()[localCoord.first()-1, localCoord.second()+1] == //somespaceship}
+	
+		possiblePawnMoves.pushback(pair<localCoord.first()-1, localCoord.second()+1>)
+	
+		}
+		
+		//check other diagonal
+	if(currentGameState.getBoardConfig()[localCoord.first()-1, localCoord.second()-1] == //somespaceship}
+	
+		possiblePawnMoves.pushback(pair<localCoord.first()-1, localCoord.second()-1>)
+		
+		}
+		
+	return possiblePawnMoves;
 	}
 	
 	
@@ -88,9 +112,9 @@ vector<pair<unsigned,unsigned>>  Knight::generatePossibleMoves (pair <unsigned, 
 
 	}
 	
-//Castle
+//Rook
 
-vector<pair<unsigned,unsigned>>  Castle::generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard){
+vector<pair<unsigned,unsigned>>  Rook::generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard){
 	
 	//definition required
 
@@ -108,7 +132,32 @@ vector<pair<unsigned,unsigned>>  Queen::generatePossibleMoves (pair <unsigned, u
 
 vector<pair<unsigned,unsigned>>  King::generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentBoard){
 	
-	//definition required
+	vector<pair<unsigned, unsigned>> possiblePawnMoves;
+	pair<int, int> localCoord = pieceCordinates;
+	
+		//check if space ahead is empty if it is then place that spaces coordinate on vector
+	if(currentGameState.getBoardConfig()[localCoord.first()-1][localCoord.second()] == empty
+		|| ){
+		
+		possiblePawnMoves.pushback(pair<localCoord.first()-1, localCoord.second()>)
+		}
+	
+		//check the diagonal one space ahead, if so throw on the vector
+	if(currentGameState.getBoardConfig()[localCoord.first()-1, localCoord.second()+1] == //somespaceship}
+	
+		possiblePawnMoves.pushback(pair<localCoord.first()-1, localCoord.second()+1>)
+	
+		}
+		
+		//check other diagonal
+	if(currentGameState.getBoardConfig()[localCoord.first()-1, localCoord.second()-1] == //somespaceship}
+	
+		possiblePawnMoves.pushback(pair<localCoord.first()-1, localCoord.second()-1>)
+		
+		}
+		
+	return possiblePawnMoves;
+	}
 
 	}
 
