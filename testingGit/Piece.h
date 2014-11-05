@@ -13,12 +13,13 @@
 #include <string>
 #include <utility> 
 #include <vector>
-#include <gameState.h>
+#include "GameState.h"
+#include "Spaces.h"
 
 
 using namespace std;
 
-class piece {
+class Piece {
     
 private:
 
@@ -73,7 +74,7 @@ public:
 //////////////////
 //Bishop
 
-class Bishop: public piece{
+class Bishop: public Piece{
 	
 public:
 	
@@ -87,7 +88,7 @@ public:
 //////////////////
 //Knight
 
-class Knight: public piece{
+class Knight: public Piece{
 	
 public:
 	
@@ -101,7 +102,7 @@ public:
 //////////////////
 //Castle
 
-class Castle: public piece{
+class Castle: public Piece{
 	
 public:
 	
@@ -115,7 +116,7 @@ public:
 /////////////////
 //Queen
 
-class Queen: public piece{
+class Queen: public Piece{
 	
 public:
 	
@@ -129,7 +130,7 @@ public:
 ////////////////
 //King
 
-class King: public piece{
+class King: public Piece{
 	
 public:
 	

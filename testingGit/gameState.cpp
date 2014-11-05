@@ -1,26 +1,26 @@
 //
-// gameState.cpp
+// GameState.cpp
 //
 
 #include "GameState.h"
 
-void GameState::setWhite(vector <piece> x){
+void GameState::setWhite(vector <Piece> x){
 	white = x;
 }
 
-void GameState::setBlack(vector <piece> y){
+void GameState::setBlack(vector <Piece> y){
 	black = y;
 }
 
-void GameState::setBoardConfig(spaces[][] board){
+void GameState::setBoardConfig(Spaces[][] board){
 	boardConfig = board;
 }
 
-vector <piece> GameState::getWhite(){
+vector <Piece> GameState::getWhite(){
 	return white;
 }
 
-vector <piece> GameState::getBlack(){
+vector <Piece> GameState::getBlack(){
 	return black;
 }
 

@@ -10,32 +10,32 @@
 
 
 //mutators:
-void piece::setPieceName(string s){
+void Piece::setPieceName(string s){
     name = s;
 }
-void piece::setPieceColor(string s){
+void Piece::setPieceColor(string s){
     color = s;
 }
-void piece::setPieceWeight(int w){
+void Piece::setPieceWeight(int w){
     weight = w;
 }
-void piece::setPieceCoordinates(int x, int y){
+void Piece::setPieceCoordinates(int x, int y){
     pieceCordinates.first = x;
     pieceCordinates.second = y;
 }
 
 //accessors
-string piece::getPieceName(){
+string Piece::getPieceName(){
     
     return name;
     
 }
 
-string piece::getPieceColor(){
+string Piece::getPieceColor(){
     return color;
 }
 
-int piece::getPieceWeight(){
+int Piece::getPieceWeight(){
  
     return weight;
 }
