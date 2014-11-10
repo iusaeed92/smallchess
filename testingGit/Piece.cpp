@@ -67,13 +67,19 @@ int diagonalMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.first() = localCoord.first()-1;
 			localCoord.second() = localCoord.second()+1;
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
 		return movesSoFar;
 	}
 
@@ -84,13 +90,19 @@ int diagonalMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.first() = localCoord.first()-1;
 			localCoord.second() = localCoord.second()-1;
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
 		return movesSoFar;
 	}
 
@@ -101,13 +113,19 @@ int diagonalMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.first() = localCoord.first()+1;
 			localCoord.second() = localCoord.second()-1;
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
 		return movesSoFar;
 	}
 
@@ -118,13 +136,20 @@ int diagonalMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.first() = localCoord.first()+1;
 			localCoord.second() = localCoord.second()+1;
 			}
+		
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
 		return movesSoFar;
 	}
 }
@@ -140,13 +165,19 @@ int straightMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.first() = localCoord.first()-1;
 			
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
 		return movesSoFar;
 	}
 
@@ -157,13 +188,19 @@ int straightMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
-	
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 			movesSoFar = movesSoFar+1;
 			localCoord.first() = localCoord.first()+1;
 			
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
+		
 		return movesSoFar;
 	}
 
@@ -174,12 +211,19 @@ int straightMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.second() = localCoord.second()-1;
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
+		
 		return movesSoFar;
 	}
 
@@ -189,13 +233,19 @@ int straightMoves(gameState instance, pair<int, int> coordinates, int direction)
 		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != empty){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty
-				|| .isSameColor(currentGameState, pair<localCoord.first(), localCoord.second()>) == false){
+		while(instance.getBoardConfig()[localCoord.first(), localCoord.second()] == empty){
 	
 			movesSoFar = movesSoFar+1;
 			
 			localCoord.second() = localCoord.second()+1;
 			}
+		if(instance.getBoardConfig()[localCoord.first(), localCoord.second()] != outofBounds){
+		
+			if(.isSameColor(currentGameState, pair<localCoord.first(),localCoord.second()>) == false)
+				movesSoFar =  movesSoFar+1;
+			
+		}
+		
 		return movesSoFar;
 	}
 }
