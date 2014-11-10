@@ -18,7 +18,7 @@ private:
 
 	vector <Piece> white;
 	vector <Piece> black;
-	Spaces[][] boardConfig;
+	string[][] boardConfig;
 	
 	
 public:
@@ -27,11 +27,11 @@ public:
     gameState();
 	void setWhite(vector <Piece> x);
 	void setBlack(vector <Piece> y);
-	void setBoardConfig(Spaces[][] board);
+	void setBoardConfig(string[][] board);
 	
 	vector <Piece> getWhite();
 	vector <Piece> getBlack();
-	Spaces[][] getBoardConfig();
+	string[][] getBoardConfig();
 	void print();
 };
 

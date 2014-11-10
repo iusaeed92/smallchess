@@ -10,7 +10,6 @@
 #include <vector>
 #include "piece.h"
 #include "gameState.h"
-#include "Spaces.h"
 
 using namespace std;
 
