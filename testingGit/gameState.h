@@ -1,38 +1,38 @@
 //
-//	gameState.h
+//	GameState.h
 //
 
 
-#ifndef __testingGit__gameState__
-#define __testingGit__gameState__
+#ifndef __testingGit__GameState__
+#define __testingGit__GameState__
 
 #include <iostream>
 #include <vector>
 #include "Piece.h"
-#include "piece.h"
-
 
 using namespace std;
 
-class gameState {
+class GameState {
 	
 private:
 
-	vector <piece> white;
-	vector <piece> black;
-	spaces[][] boardConfig;
+	vector <Piece> white;
+	vector <Piece> black;
+	Spaces[][] boardConfig;
 	
 	
 public:
 
     
     gameState();
-	void setWhite(vector <piece> x);
-	void setBlack(vector <piece> y);
-	void setBoardConfig(spaces[][] board);
+	void setWhite(vector <Piece> x);
+	void setBlack(vector <Piece> y);
+	void setBoardConfig(Spaces[][] board);
 	
-	vector <piece> getWhite();
-	vector <piece> getBlack();
-	spaces[][] getBoardConfig();
+	vector <Piece> getWhite();
+	vector <Piece> getBlack();
+	Spaces[][] getBoardConfig();
 	void print();
-}
+};
+
+#endif
