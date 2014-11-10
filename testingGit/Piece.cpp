@@ -7,7 +7,7 @@
 //
 
 #include "Piece.h"
-
+#include "gameState.h"
 
 //mutators:
 void Piece::setPieceName(string s){
@@ -40,13 +40,13 @@ int Piece::getPieceWeight(){
     return weight;
 }
 
-pair<int, int> piece::getPieceCoodinates(){
+pair<int, int> Piece::getPieceCoodinates(){
     return pieceCordinates;
     
 }
 
 
-bool piece::isSameColor(gameState instance, pair<int, int> coordinates){
+bool Piece::isSameColor(gameState instance, pair<int, int> coordinates){
 	
 	if(instance[coordinates.first()][coordinates.second()].first == pieceColor){
 		return true;

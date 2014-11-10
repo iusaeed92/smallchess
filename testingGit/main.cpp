@@ -140,11 +140,6 @@ int main()
 	columnWP2 = 'letterWP2' - 96;
 	whitePawn2.setPieceCoordinates(rowWP2, columnWP2);
 	
-	
-	
-	
-
-
 
     return 0;
 }

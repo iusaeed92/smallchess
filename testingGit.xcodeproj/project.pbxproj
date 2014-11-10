@@ -31,6 +31,7 @@
 		8E5ADA4319E5C61F00546B3E /* testingGit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testingGit; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5ADA4619E5C61F00546B3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8E5ADA4819E5C61F00546B3E /* testingGit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = testingGit.1; sourceTree = "<group>"; };
+		8E62A0B21A1146A3003033A9 /* Spaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spaces.h; sourceTree = "<group>"; };
 		8E991F141A005B5500BD9BEE /* Piece.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
 		8E991F151A005B5500BD9BEE /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
 		8EF661D71A00787B009A1DFD /* gameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameState.h; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 				8E991F141A005B5500BD9BEE /* Piece.cpp */,
 				8EF661D71A00787B009A1DFD /* gameState.h */,
 				8E991F151A005B5500BD9BEE /* Piece.h */,
+				8E62A0B21A1146A3003033A9 /* Spaces.h */,
 				8E43C8C61A06D29E00C0AE23 /* gameState.cpp */,
 				8E5ADA4819E5C61F00546B3E /* testingGit.1 */,
 			);

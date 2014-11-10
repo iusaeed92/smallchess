@@ -8,12 +8,9 @@
 
 #include <iostream>
 #include <vector>
-<<<<<<< Updated upstream
 #include "Piece.h"
-=======
 #include "piece.h"
 
->>>>>>> Stashed changes
 
 using namespace std;
 
@@ -28,6 +25,8 @@ private:
 	
 public:
 
+    
+    gameState();
 	void setWhite(vector <piece> x);
 	void setBlack(vector <piece> y);
 	void setBoardConfig(spaces[][] board);

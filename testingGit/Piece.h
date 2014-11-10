@@ -13,7 +13,7 @@
 #include <string>
 #include <utility> 
 #include <vector>
-#include "GameState.h"
+#include "gameState.h"
 #include "Spaces.h"
 
 
@@ -128,7 +128,7 @@ class Queen: public Piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
+	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentGameState);
 	
 	
 	 
