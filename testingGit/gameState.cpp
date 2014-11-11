@@ -2,11 +2,7 @@
 // GameState.cpp
 //
 
-#include <vector>
-#include <string>
 #include "GameState.h"
-
-using namespace std; 
 
 void GameState::setWhite(vector <Piece> x){
 	white = x;
@@ -28,7 +24,7 @@ vector <Piece> GameState::getBlack(){
 	return black;
 }
 
-vector < vector < string > > GameState::getBoardConfig(){
+string [][] GameState::getBoardConfig(){
 	return boardConfig;
 }
 

@@ -25,20 +25,20 @@ private:
 
 	vector <Piece> white;
 	vector <Piece> black;
-	vector <vector <string > > boardConfig;
+	string boardConfig[0][0];
 	
 	
 public:
 
     
-	GameState gameState();
+    GameState gameState();
 	void setWhite(vector <Piece> x);
 	void setBlack(vector <Piece> y);
 	void setBoardConfig(vector<vector<string> > board);
 	
 	vector <Piece> getWhite();
 	vector <Piece> getBlack();
-	vector<vector<string> > getBoardConfig();
+	string * getBoardConfig();
 	void print();
 };
 
