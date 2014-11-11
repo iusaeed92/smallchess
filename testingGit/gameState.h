@@ -2,6 +2,10 @@
 //	GameState.h
 //
 
+#include <iostream>
+#include <vector>
+#include "Piece.h"
+
 
 #ifndef GameState_H
 #define GameState_H
@@ -10,6 +14,8 @@
 #include <vector>
 #include <string>
 #include "Piece.h"
+
+
 
 using namespace std;
 
