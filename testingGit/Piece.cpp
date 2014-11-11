@@ -51,7 +51,7 @@ pair<int, int> Piece::getPieceCoodinates(){
 
 bool Piece::isSameColor(GameState instance, pair<int, int> coordinates){
 	
-	if(instance[coordinates.first()][coordinates.second()].first == pieceColor){
+	if(instance[coordinates.first][coordinates.second()].first == pieceColor){
 		return true;
 	}
 	else{
@@ -68,18 +68,18 @@ int diagonalMoves(GameState instance, pair<int, int> coordinates, int direction)
 		localCoord.first = localCoord.first - 1;
 		localCoord.second = localCoord.second + 1;
 		
-		if(instance.getBoardConfig()[localCoord.first, localCoord.second] != empty){
+	if(instance.getBoardConfig()[localCoord.first][localCoord.second] != "empty"){
 			return movesSoFar;
 		}
-		while(instance.getBoardConfig()[localCoord.first, localCoord.second] == empty){
+	while(instance.getBoardConfig()[localCoord.first][localCoord.second] == "empty"){
 	
 			movesSoFar = movesSoFar+1;
 			localCoord.first = localCoord.first -1 ;
 			localCoord.second = localCoord.second + 1;
 			}
-		if((instance.getBoardConfig(localCoord.first, localCoord.second)) != outofBounds){
+		if(instance.getBoardConfig()[localCoord.first][localCoord.second] != "outofBounds"){
 		
-			if(.isSameColor(currentGameState, pair<localCoord.first,localCoord.second>) == false)
+			if(piece.isSameColor(currentGameState, pair<localCoord.first,localCoord.second>) == false)
 				movesSoFar =  movesSoFar+1;
 			
 		}
