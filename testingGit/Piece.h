@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Ibrahim Saeed. All rights reserved.
 //
 
-#ifndef __testingGit__Piece__
-#define __testingGit__Piece__
+#ifndef Piece_H
+#define Piece_H
 
 #include <stdio.h>
 #include <string>
 #include <utility> 
 #include <vector>
-#include "gameState.h"
+#include "GameState.h"
 
 using namespace std;
 
@@ -32,9 +32,9 @@ public:
     
     //
 	
-	bool isSameColor(gameState instance, pair<int, int> coordinates);
+	static bool isSameColor(GameState instance, pair<int, int> coordinates);
 	
-	
+	Piece piece();
 	//mutators:
     void setPieceName(string s);
     void setPieceColor(string s);
@@ -63,12 +63,12 @@ public:
 ////////////////
 //PAWN
 
-class Pawn: public piece{
+class Pawn: public Piece{
 	
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
+	vector<pair<unsigned,unsigned> > generatePossibleMoves (GameState currentBoard);
 	
 	
 	 
@@ -82,7 +82,7 @@ class Bishop: public Piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
+	vector<pair<unsigned,unsigned> > generatePossibleMoves (GameState currentBoard);
 	
 	
 	 
@@ -96,7 +96,7 @@ class Knight: public Piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
+	vector<pair<unsigned,unsigned> > generatePossibleMoves (GameState currentBoard);
 	
 	
 	 
@@ -106,13 +106,13 @@ public:
 //Castle
 
 
-class Rook: public piece{
+class Rook: public Piece{
 
 	
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
+	vector<pair<unsigned,unsigned> > generatePossibleMoves (GameState currentBoard);
 	
 	
 	 
@@ -126,7 +126,7 @@ class Queen: public Piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, gameState currentGameState);
+	vector<pair<unsigned,unsigned> > generatePossibleMoves (pair <unsigned, unsigned> pieceCoordinates, GameState currentGameState);
 	
 	
 	 
@@ -140,7 +140,7 @@ class King: public Piece{
 public:
 	
 	
-	vector<pair<unsigned,unsigned>> generatePossibleMoves (gameState currentBoard);
+	vector<pair<unsigned,unsigned> > generatePossibleMoves (GameState currentBoard);
 	
 	
 	 

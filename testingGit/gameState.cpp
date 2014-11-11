@@ -12,7 +12,7 @@ void GameState::setBlack(vector <Piece> y){
 	black = y;
 }
 
-void GameState::setBoardConfig(Spaces[][] board){
+void GameState::setBoardConfig(vector<vector<string> > board){
 	boardConfig = board;
 }
 
@@ -24,7 +24,7 @@ vector <Piece> GameState::getBlack(){
 	return black;
 }
 
-spaces[][] GameState::getBoardConfig(){
+string [][] GameState::getBoardConfig(){
 	return boardConfig;
 }
 

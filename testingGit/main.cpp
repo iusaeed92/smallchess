@@ -8,8 +8,8 @@
 
 #include <iostream>
 #include <vector>
-#include "piece.h"
-#include "gameState.h"
+#include "Piece.h"
+#include "GameState.h"
 
 using namespace std;
 
@@ -129,14 +129,14 @@ int main()
 ////
 	cout << "Input the position of white pawn (1). First enter the row (1-6). Then the column(a-e):" << endl;
 	cin >> rowWP1;
-	char >> letterWP1;
-	columnWP1 = 'letterWP1' - 96;
+	cin >> letterWP1;
+	columnWP1 = letterWP1 - 96;
 	whitePawn1.setPieceCoordinates(rowWP1, columnWP1);
 
 	cout << "Input the position of white pawn (2). First enter the row (1-6). Then the column(a-e):" << endl;
 	cin >> rowWP2;
-	char >> letterWP2;
-	columnWP2 = 'letterWP2' - 96;
+	cin >> letterWP2;
+	columnWP2 = letterWP2 - 96;
 	whitePawn2.setPieceCoordinates(rowWP2, columnWP2);
 	
 

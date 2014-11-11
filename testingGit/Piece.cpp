@@ -6,8 +6,11 @@
 //  Copyright (c) 2014 Ibrahim Saeed. All rights reserved.
 //
 
+#include<iostream>
+#include<string>
 #include "Piece.h"
-#include "gameState.h"
+
+using namespace std;
 
 //mutators:
 void Piece::setPieceName(string s){
@@ -46,7 +49,7 @@ pair<int, int> Piece::getPieceCoodinates(){
 }
 
 
-bool Piece::isSameColor(gameState instance, pair<int, int> coordinates){
+bool Piece::isSameColor(GameState instance, pair<int, int> coordinates){
 	
 	if(instance[coordinates.first()][coordinates.second()].first == pieceColor){
 		return true;
@@ -56,7 +59,7 @@ bool Piece::isSameColor(gameState instance, pair<int, int> coordinates){
 	}
 
 
-int diagonalMoves(gameState instance, pair<int, int> coordinates, int direction){
+int diagonalMoves(GameState instance, pair<int, int> coordinates, int direction){
 	pair<int, int> localCoord;
 	int movesSoFar = 0;
 	
