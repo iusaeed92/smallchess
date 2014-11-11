@@ -29,11 +29,12 @@ private:
     
     
 public:
-
+    
+    //
+	
 	static bool isSameColor(GameState instance, pair<int, int> coordinates);
 	
 	Piece piece();
-
 	//mutators:
     void setPieceName(string s);
     void setPieceColor(string s);
